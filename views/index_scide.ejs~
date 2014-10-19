@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scide</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+   
+    <img src="images/logo.png" id="logo">
+
+
+    <div id="left_section" class="sec">
+      <div id="intro_text">
+        <p><span id="sc">Sci-de</span> is a <span id="p">project</span>
+        <p>forum for 
+        <span id="s">students</span> to
+        <p><span id="r">receive</span> help from 
+        <p>each other and <span id="e">experts.</span>
+      </div>
+
+      <div id="signup_sec">
+        <p>Not a member yet ? <p>
+        <div>
+          <a href="/signup"><input type="submit" value="SIGN UP" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="right_section" class="sec">
+
+      <form action="/login" method="post">
+        <div id="signin_sec">
+          <p>Sign In</p>
+          <p><input type="text" name="email" placeholder="Email"></p>
+          <p><input type="password" name="password" placeholder="Password"></p>
+          <p><a href="/forgot" id="forgot">Forgot Password ?</a></p>
+        </div>
+
+        <p class="submit"><input type="submit" value="LOG IN"></p>
+      </form>
+
+      <div id="so_si">
+        <a id="click_here">Click Here to Sign in with </a> 
+        <div id="social_signin">
+        <a href="/auth/facebook"><img class="social_buttons" src="images/fb_button.png"></a>
+        <!--<a href="/auth/twitter"><img class="social_buttons"src="images/twitter_button.png"></a>
+        <a href="/auth/google"><img class="social_buttons" src="images/google_button.png"></a>
+        -->
+	  </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

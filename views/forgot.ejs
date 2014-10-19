@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scide-Forgot Password</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/forgot-password.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container-fluid full-height">
+      <div class="row header-row">
+         <nav class="navbar navbar-default header-sec" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <ul class="nav navbar-nav navbar-left">
+                <li id="header-logo"><a href="#"><img src="images/logo.png" id=""></a></li>
+              </ul>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ's</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav> 
+      </div>   
+
+      <div class="row sections-row full-height">
+        <div class="col-md-4 col-md-offset-4">
+          <div id="right_section" class="sec">
+            <div class="alert alert-danger alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <strong>Incorrect</strong> username or password!
+            </div>
+	    <form action="/forgot" method="post">
+            <div class="signin_sec">
+              <p id="signup-heading">Forgot Password ?</p>
+              <p><input type="text" name="email"        value=""          placeholder="Enter your Email here"></p>
+              <p id="forgot"><a href="#"></a></p>
+            </div>
+
+             <p class="submit"><input type="submit" name="commit" value="Reset"></p>
+	     <!--<p class="submit"><button type="submit" class="btn btn-info btn-lg">Reset</button></p>-->
+             <!-- <div class="row social-button-row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-3" id="left-social-col">
+                  <div class="btn btn-primary fb-btn">
+                    <i class="fa fa-facebook"></i>
+                  </div>
+                </div>
+                <div class="col-xs-3" id="right-social-col">
+                  <div class="btn btn-primary google-btn">
+                    <i class="fa fa-google-plus"></i>
+                  </div>
+                </div>
+                <div class="col-md-3"></div>
+             </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="row footer-row">
+        <div calss="col-md-12">
+          <p>Copyright Scide, 2014</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
